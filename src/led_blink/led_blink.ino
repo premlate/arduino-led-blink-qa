@@ -1,13 +1,13 @@
-// LED Blink - Version 0.1 (initial version, contains intentional QA defects)
-// Board: Arduino Uno
+// LED Blink - after fixing issue #1
+const uint8_t LED_PIN = 8;   // single place to change the pin
 
 void setup() {
-  pinMode(13, OUTPUT);
+  pinMode(LED_PIN, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(13, HIGH);
+  digitalWrite(LED_PIN, HIGH);
   delay(1000);
-  digitalWrite(13, LOW);
+  digitalWrite(LED_PIN, LOW);
   delay(1000);
 }
